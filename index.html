@@ -1,0 +1,282 @@
+const http =require("http");
+const server = http.createServer((req, res) => {
+  
+  res.end('fghjkl;');
+});
+server.listen(8000);
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>草原之眼</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  </head>
+  <body>
+    <!-- header头部 -->
+    <header class="header">
+      <a href="#" class="logo">草原之眼</a>
+
+      <div class="social-media">
+        <a href="https://www.douyin.com/user/MS4wLjABAAAArh5_Uba7oQdqceWPNdB0idr37mmW58bsRhbEx4U40wQ"><i class="bx bxl-tiktok"></i></a>
+      </div>
+
+      <nav class="navbar">  
+        <a href="address.html">地域分布</a>
+        <a href="nature.html">自然风光</a>
+        <a href="economy.html">经济发展 </a>
+        <a href="food.html">美食特色 </a>
+        <a href="history.html">历史文化</a>
+      </nav>
+    </header>
+    <!-- section内容主题 -->
+    <section class="banner">
+      <!-- 内蒙古 -->
+      <div class="slider">
+        <div class="slide active">
+         <img src="./images/4F87F3235A65E30FE151D02DF382F62ACD3E72A0_size71_w1080_h665.jpeg" alt="">
+          <div class="left-info">
+            <div class="penetrte-blur">
+              <h1>内蒙</h1>
+            </div>
+            <div class="content">
+              <h3>内蒙古自治区</h3>
+              <p>
+                内蒙古自治区，是祖国北疆一片广袤而神奇的土地。它拥有辽阔壮丽的草原、广袤无垠的沙漠和绵延起伏的山脉。这里文化多元且独特，蒙古族文化熠熠生辉。历史底蕴深厚，见证了无数的变迁。经济蓬勃发展，人民热情好客，尽显豪迈与奔放，是一个魅力无穷的地方。              </p>
+            </div>
+          </div>
+          <div class="right-info">
+            <h1>  
+              古
+            </h1>
+            <h3>ᠣᠩᠭᠣᠯ ᠮᠣᠩᠭᠣᠯ</h3>
+          </div>
+        </div>
+        <!-- 呼和浩特市 -->
+        <div class="slide">
+          <img src="./images/huhehaote.jpg" alt="">
+          <div class="left-info">
+            <div class="penetrte-blur">
+              <h1>呼和</h1>
+            </div>
+            <div class="content">
+              <h3>呼和浩特</h3>
+              <p>
+                呼和浩特市，内蒙古首府。它历史悠久，文化灿烂，是多元文化交融的魅力之城。拥有众多历史遗迹，如大召寺等。作为中心城市，它经济发达，交通便捷，教育资源丰富。其兼具草原风情与现代气息，城市建设日新月异，散发着独特的魅力与活力              </p>
+
+            </div>
+          </div>
+          <div class="right-info">
+            <h1>浩特</h1>
+            <h3>蒙A</h3>
+          </div>
+        </div>
+        <!-- 包头市 -->
+        <div class="slide">
+          <img src="./images/baotou.png" alt="">
+          <div class="left-info">
+            <div class="penetrte-blur">
+              <h1>包</h1>
+            </div>
+            <div class="content">
+              <h3>包头市</h3>
+              <p>
+                包头市，内蒙古重要城市。它是一座工业名城，钢铁等产业发达。历史文化底蕴深厚，有赵长城等遗迹。城市规划良好，基础设施完备。同时，拥有美丽的自然风光，城中草原独具特色。包头人热情好客，尽显北方豪爽，是一座充满魅力的城市。              </p>
+            </div>
+          </div>
+          <div class="right-info">
+            <h1>头</h1>
+            <h3>蒙B</h3>
+          </div>
+        </div>
+        <!-- 乌海市 -->
+        <div class="slide">
+          <img src="./images/wh.png" alt="">
+          <div class="left-info">
+            <div class="penetrte-blur">
+              <h1>乌</h1>
+            </div>
+            <div class="content">
+              <h3>乌海市</h3>
+              <p>
+                乌海市，内蒙古新兴工业城市。它因煤而兴，工业体系较为完善。虽面积不大，但魅力独特。黄河穿流而过，赋予其灵动之美。这里还有奇异的自然景观，如乌海湖等。同时，文化多元且富有活力，生活气息浓郁，是一座别样的塞外之城。              </p>
+            </div>
+          </div>
+          <div class="right-info">
+            <h1>海</h1>
+            <h3>蒙C</h3>
+          </div>
+        </div>
+        <!-- 赤峰市 -->
+        <div class="slide">
+          <img src="./images/chifeng.jpg" alt="">
+          <div class="left-info">
+            <div class="penetrte-blur">
+              <h1>赤</h1>
+            </div>
+            <div class="content">
+              <h3>赤峰市</h3>
+              <p>
+                赤峰市，内蒙古的璀璨明珠。它历史源远流长，红山文化熠熠生辉。自然资源丰富，山川壮美。草原广袤无垠，蓝天碧草交相辉映。这里还是多民族聚居地，文化多元而绚烂。赤峰市发展蓬勃，充满活力与希望，令人向往。              </p>
+            </div>
+          </div>
+          <div class="right-info">
+            <h1>峰</h1>
+            <h3>蒙D</h3>
+          </div>
+        </div>
+        <!-- 呼伦贝尔市 -->
+        <div class="slide">
+          <img src="./images/hulunbeier.png" alt="">
+          <div class="left-info">
+            <div class="penetrte-blur">
+              <h1>呼伦</h1>
+            </div>
+            <div class="content">
+              <h3>呼伦贝尔市</h3>
+              <p>
+                呼伦贝尔市，宛如一颗北疆明珠。它拥有广袤无垠的大草原，蓝天、白云、碧草构成绝美的画卷。丰富的民族文化在此交融，特色民俗魅力十足。大兴安岭绵延其间，森林资源丰富。这里风景如画，是旅游胜地，让人流连忘返。              </p>
+            </div>
+          </div>
+          <div class="right-info">
+            <h1>贝尔</h1>
+            <h3>蒙E</h3>
+          </div>
+        </div>
+        <!-- 兴安盟 -->
+        <div class="slide">
+          <img src="./images/xam.jpg" alt="">
+          <div class="left-info">
+            <div class="penetrte-blur">
+              <h1>兴</h1>
+            </div>
+            <div class="content">
+              <h3>兴安盟</h3>
+              <p>
+                兴安盟，内蒙古的美丽之地。这里有广袤的森林与辽阔的草原，自然风光旖旎。它承载着深厚的历史文化，红色遗迹彰显着过往的辉煌。独特的民俗风情让人陶醉，人们热情好客。兴安盟宛如一颗绿色明珠，散发着迷人的魅力。              </p>
+            </div>
+          </div>
+          <div class="right-info">
+            <h1>安</h1>
+            <h3>蒙F</h3>
+          </div>
+        </div>
+        <!-- 通辽市 -->
+        <div class="slide">
+          <img src="./images/tl.png" alt="">
+          <div class="left-info">
+            <div class="penetrte-blur">
+              <h1>通</h1>
+            </div>
+            <div class="content">
+              <h3>通辽市</h3>
+              <p>
+                通辽市，内蒙古东部的重要城市。它地域辽阔，农牧业发达，是物产丰富之地。历史文化悠久，古迹众多。城市充满活力，交通便利。独特的民族风情在此展现，歌舞与美食别具特色。通辽市正蓬勃发展，绽放着独特的魅力与光彩。              </p>
+            </div>
+          </div>
+          <div class="right-info">
+            <h1>辽</h1>
+            <h3>蒙G</h3>
+          </div>
+        </div>
+        <!-- 锡林郭勒盟 -->
+        <div class="slide">
+          <img src="./images/xlgl.png" alt="">
+          <div class="left-info">
+            <div class="penetrte-blur">
+              <h1>锡林</h1>
+            </div>
+            <div class="content">
+              <h3>锡林郭勒盟</h3>
+              <p>
+                锡林郭勒盟，广袤草原的天堂。这里蓝天澄澈，白云悠悠，一望无际的绿色令人心醉。古老的文化传承千年，悠扬的长调、豪迈的舞蹈展现独特风情。肥美的牛羊如点点繁星，蒙古包错落有致。它是自然与人文完美结合的胜地，魅力无限。              </p>
+            </div>
+          </div>
+          <div class="right-info">
+            <h1>郭勒</h1>
+            <h3>蒙H</h3>
+          </div>
+        </div>
+        <!-- 乌兰察布市 -->
+        <div class="slide">
+          <img src="./images/wulanchabu.jpg" alt="">
+          <div class="left-info">
+            <div class="penetrte-blur">
+              <h1>乌兰</h1>
+            </div>
+            <div class="content">
+              <h3>乌兰察布市</h3>
+              <p>
+                乌兰察布市，地处内蒙古中部。它拥有辽阔的草原风光和壮美的自然景观。辉腾锡勒草原广袤无垠，风力资源丰富。这里也是文化交融之地，历史遗迹留存。交通便捷，城市发展日新月异。乌兰察布如一颗闪耀新星，绽放独特光彩。              </p>
+            </div>
+          </div>
+          <div class="right-info">
+            <h1>察布</h1>
+            <h3>蒙J</h3>
+          </div>
+        </div>
+        <!-- 鄂尔多斯市 -->
+        <div class="slide">
+          <img src="./images/erds.jpg" alt="">
+          <div class="left-info">
+            <div class="penetrte-blur">
+              <h1>鄂尔</h1>
+            </div>
+            <div class="content">
+              <h3>鄂尔多斯市</h3>
+              <p>
+                鄂尔多斯市，内蒙古的璀璨之星。它资源丰富，经济发展迅速，现代化气息浓厚。拥有壮丽的沙漠景观与广袤的草原，成吉思汗陵见证着历史的辉煌。城市建设日新月异，文化多元包容。鄂尔多斯充满活力与魅力，令人向往与赞叹。              </p>
+            </div>
+          </div>
+          <div class="right-info">
+            <h1>多斯</h1>
+            <h3>蒙K</h3>
+          </div>
+        </div>
+        <!-- 巴彦淖尔市 -->
+        <div class="slide">
+          <img src="./images/bameng.jpg" alt="">
+          <div class="left-info">
+            <div class="penetrte-blur">
+              <h1>巴彦</h1>
+            </div>
+            <div class="content">
+              <h3>巴彦淖尔市</h3>
+              <p>
+                巴彦淖尔市，内蒙古西部的魅力之地。它有广袤肥沃的河套平原，农业发达。黄河在此蜿蜒流淌，润泽一方。还有独特的自然风光，如乌拉特草原。历史文化悠久，民俗风情浓郁。这里物产丰富，是个充满生机与活力的地方。              </p>
+            </div>
+          </div>
+          <div class="right-info">
+            <h1>淖尔</h1>
+            <h3>蒙L</h3>
+          </div>
+        </div>
+        <!-- 阿拉善盟 -->
+        <div class="slide">
+          <img src="./images/als.png" alt="">
+          <div class="left-info">
+            <div class="penetrte-blur">
+              <h1>阿</h1>
+            </div>
+            <div class="content">
+              <h3>阿拉善盟</h3>
+              <p>
+                阿拉善盟，宛如一颗沙漠明珠。广袤无垠的沙漠赋予其神秘色彩，骆驼在其间穿梭，展现坚韧之美。贺兰山巍峨耸立，守护着这片土地。独特的民族文化在此绽放，古老的传说流传不息。阿拉善盟，充满魅力与传奇，令人向往不已。              </p>
+            </div>
+          </div>
+          <div class="right-info">
+            <h1>拉善</h1>
+            <h3>蒙M</h3>
+          </div>
+        </div>
+      </div>
+      <div class="navigation">
+        <span class="prev-btn"><i class="bx bx-chevron-left"></i></span>
+        <span class="next-btn"><i class="bx bx-chevron-right"></i></span>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>草原之眼</title>
+    <link rel="stylesheet" href="./css/nature.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/restore.css">
+    <link rel="icon" href="./images/_20240602144134.jpg">
+</head>
+<body>
+    <!-- 标题 -->
+    <header>
+        <h1>自然风光</h1>
+        <p>байгалийн ойд зураг</p>
+        <div class="showTime">当前时间：2024年5月28-11时54分14秒</div>
+        <script>
+            var t = null;
+            t = setTimeout(time, 1000); //開始运行
+            function time() {
+                clearTimeout(t); //清除定时器
+                dt = new Date();
+                var y = dt.getFullYear();
+                var mt = dt.getMonth() + 1;
+                var day = dt.getDate();
+                var h = dt.getHours(); //获取时
+                var m = dt.getMinutes(); //获取分
+                var s = dt.getSeconds(); //获取秒
+                document.querySelector(".showTime").innerHTML =
+                    "当前时间：" +
+                    y +
+                    "年" +
+                    mt +
+                    "月" +
+                    day +
+                    "-" +
+                    h +
+                    "时" +
+                    m +
+                    "分" +
+                    s +
+                    "秒";
+                t = setTimeout(time, 1000); //设定定时器，循环运行
+            }
+        </script>
+    </header>
+    <!--  -->
+    <div class="zhong">
+        <!-- 可视化 -->
+        <div class="tu bar">
+            <div class="top">16-22年到内蒙旅游人流量(万)</div>
+            <div class="biao"></div>
+            <div class="xia"></div>
+        </div>
+        <!-- 视频 -->
+    
+            <div class="panel1 line1">
+                <h2>2023年内蒙古各盟市中秋假期旅游收入(亿)</h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+              </div>
+        <!-- 图片轮播 -->
+        <div class="pic">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/2.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/R-C.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/R-C (2).jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/R-C (1).jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/OIP-C.jpg" alt="">
+                    </div>  
+                    <div class="swiper-slide">
+                        <img src="./images/0010031204-1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/1564614391390_155.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/51e1592423691af8c742a6c34afc13e7.jpg_r_1360x1360x95_6b9b1bb9.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div class="xiaxian"></div>
+        </div>
+        <!-- 可视化 -->
+        <div class="panel pie1">
+            <div class="h2"> 各市区人口总数(万)</div>
+            <div class="chart"></div>
+            <div class="panel-footer"></div>
+        </div>
+        <div class="hou line2">
+            <h2>12-23年内蒙古人员变化(万)</h2>
+            <div class="chart"></div>
+            <div class="panel-footer"></div>
+        </div>
+    </div>
+    <!-- 菜单 -->
+    <div class="niu">
+        <a href="index.html">
+            <img src="./images/返回.png" alt="" title="首页">
+        </a>
+    </div>
+    <script src="./js/flexible.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="./js/nature.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>草原之眼</title>
+    <link rel="stylesheet" href="css/address.css" />
+    <link rel="icon" href="./images/icon.jpg">
+  </head>
+
+  <body>
+    <!-- 头部的盒子 -->
+    <header>
+      <h1>地域分布
+        <span>
+          <br>
+           ᠠᠷᠠᠳᠤ ᠪᠠᠢᠭᠤᠯᠠᠯ
+        </span>
+      </h1>
+      <!-- 左边按钮 -->
+    <div class="back">
+      <a href="index.html"><img src="./images/返回.png" alt=""></a>
+      
+    </div>
+      <div class="showTime">当前时间：2020年3月17-0时54分14秒</div>
+      <script>
+        var t = null;
+        t = setTimeout(time, 1000); //開始运行
+        function time() {
+          clearTimeout(t); //清除定时器
+          dt = new Date();
+          var y = dt.getFullYear();
+          var mt = dt.getMonth() + 1;
+          var day = dt.getDate();
+          var h = dt.getHours(); //获取时
+          var m = dt.getMinutes(); //获取分
+          var s = dt.getSeconds(); //获取秒
+          document.querySelector(".showTime").innerHTML =
+            "当前时间：" +
+            y +
+            "年" +
+            mt +
+            "月" +
+            day +
+            "-" +
+            h +
+            "时" +
+            m +
+            "分" +
+            s +
+            "秒";
+          t = setTimeout(time, 1000); //设定定时器，循环运行
+        }
+      </script>
+    </header>
+    <!-- 页面主题部分 -->
+    <section class="mainbox">
+      <div class="column">
+        <div class="panel panel2  bar">
+          <h2>
+            内蒙古城市占地
+          </h2>
+          <div class="chart cat"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="map">
+          <div id="map"></div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="panel bar2">
+          <h2>内蒙古各市人口数</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel line2">
+          <h2>内蒙古五大草原面积</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel pie2">
+          <h2>土地占比</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/highmaps.js"></script>
+    <script src="https://data.jianshukeji.com/geochina/neimenggu.js"></script>
+    <script>
+      // 随机数据
+      var data = 
+      [{"name":"阿拉善盟","value":22.86},
+      {"name":"巴彦淖尔","value":5.52},
+      {"name":"乌海","value": 0.15},
+      {"name":"鄂尔多斯","value":7.37},
+      {"name":"包头","value":2.35},
+      {"name":"呼和浩特","value":1.46},
+      {"name":"乌兰察布","value":4.62},
+      {"name":"锡林郭勒盟","value":17.15},
+      {"name":"赤峰","value": 7.63},
+      {"name":"通辽","value":5.04},
+      {"name":"兴安盟","value":5.07},
+      {"name":"呼伦贝尔","value":21.43},
+      ];
+      // 初始化图表
+      var map = new Highcharts.Map('map', {
+        title: {
+          text: '内蒙古自治区',
+          
+        },
+        colorAxis: {
+          min: 0,
+          minColor: 'rgb(255,255,255)',
+          maxColor: '#006cee'
+        },
+        series: [{
+          data: data,
+          name: '地区占比%',
+          mapData: Highcharts.maps['cn/neimenggu'],
+          joinBy: 'name', // 根据 name 属性进行关联
+          states: {
+            hover: {
+              color: '#000'
+            }
+          },
+          dataLabels: {
+            enabled: true,
+            format: '{point.name}'
+          }
+        }]
+      });
+      </script>
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/address.js"></script>
+    <script src="js/china.js"></script>
+    <!-- <script src="js/myMap.js"></script> -->
+
+
+  </body>
+</html>

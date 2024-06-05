@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/icon.jpg">
+  <title>草原之眼</title>
+  <link rel="stylesheet" href="css/food.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.css">
+</head>
+
+<body>
+  <!-- 头部的盒子 -->
+  <header>
+    <h1>
+      美食特色
+      <br>
+      <span>сүүлийн хоолын үзүүлэлт</span>
+    </h1>
+
+    <!-- 左边按钮 -->
+    <div class="back">
+      <a href="index.html"><img src="./images/返回.png" alt=""></a>
+      
+    </div>
+    <!-- 时间 -->
+    <div class="showTime"></div>
+    <script>
+      var t = null;
+      t = setTimeout(time, 1000); //開始运行
+      function time() {
+        clearTimeout(t); //清除定时器
+        dt = new Date();
+        var y = dt.getFullYear();
+        var mt = dt.getMonth() + 1;
+        var day = dt.getDate();
+        var h = dt.getHours(); //获取时
+        var m = dt.getMinutes(); //获取分
+        var s = dt.getSeconds(); //获取秒
+        document.querySelector(".showTime").innerHTML =
+          "当前时间：" +
+          y +
+          "年" +
+          mt +
+          "月" +
+          day +
+          "-" +
+          h +
+          "时" +
+          m +
+          "分" +
+          s +
+          "秒";
+        t = setTimeout(time, 1000); //设定定时器，循环运行
+      }
+    </script>
+  </header>
+
+  <!-- 页面主体 -->
+  <section class="mainbox">
+    <!-- 分为两个部分 -->
+    <!-- 左 -->
+    <div class="column">
+      <!-- 上边 -->
+      <!-- 左 -->
+      <div class="top">
+        <div id="map">
+          
+        </div>
+        <!-- 右 -->
+        <div class="Video">
+          <video class="content" autoplay muted playsinline loop>
+            <source
+              src="https://v3-weba.douyinvod.com/d96234266922d8234aff6b1ed3296947/665c2413/video/tos/cn/tos-cn-ve-15c001-alinc2/oMJeANxtwyBe3H1GAocfP1YxilMfAzafEocLGs/?a=6383&ch=11&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C3&cv=1&br=668&bt=668&cs=2&ds=3&ft=GTeMyqDMffPd1B~2Y1VNvAq-antLjrKR5wz.RkamQ~afejVhWL6&mime_type=video_mp4&qs=15&rc=Zjw5ZWc3Nmc4PDgzZWZkNkBpM3BncTs6ZjlobjMzNGkzM0AyLy0yMGBeXy8xMDJhNmEzYSM0LnNzcjRfa19gLS1kLWFzcw%3D%3D&btag=c0000e00038000&cquery=100K_100o_101n_100B_100H&dy_q=1717310297&feature_id=e585bce62f14c124a0ac1450c3a95af2&l=20240602143816832C7E34B9A3006CF7E9"
+              type="video/mp4" />
+          </video>
+          <div class="Video-footer"> </div>
+        </div>
+      </div>
+      <!-- 下边轮播 -->
+      <div class="pic">
+        <div class="swiper">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="https://p3.toutiaoimg.com/tos-cn-i-qvj2lq49k0/9683aee67a6140d2a2615b49f3ed97d2~tplv-tt-large.image"
+                  alt="">
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://pics6.baidu.com/feed/0824ab18972bd40750653f9fa4855a590eb309c3.jpeg?token=34fa3bbae399a7dd2ecf2f9d858c3686"
+                  alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://i01.c.aliimg.com/img/ibank/2013/708/020/1026020807_608744449.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://img1.baidu.com/it/u=1243280469,1253671247&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"
+                  alt="">
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.alicdn.com%2Fi1%2F2099717408%2FO1CN01OYcqox24aueO7Re2E_%21%212099717408.jpg&refer=http%3A%2F%2Fimg.alicdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1719574328&t=f00d3790796e9c4434dfad557a00c807"
+                  alt="">
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://pics7.baidu.com/feed/4ec2d5628535e5dde41dca33eab628e2cf1b62a2.jpeg@f_auto?token=521dcee75556f70454b89921f3c2f209"
+                  alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://img0.baidu.com/it/u=1382500329,1508256703&fm=253&fmt=auto&app=138&f=PNG?w=608&h=500"
+                  alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://static.tongliaowang.com/files/tlfiles/images/2004/21/1528363428719519.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 文字走马灯 -->
+    <div class="column">
+      <div class="head">内蒙古美食新闻</div>
+      <!-- Swiper -->
+      <div class="swiper mySwipers">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide green"><a href="http://www.northnews.cn/p/2310939.html">吃遍中国的美食博主伊拉克老王，爱上了内蒙古的早餐</a></div>
+          <div class="swiper-slide"><a href="https://www.thepaper.cn/newsDetail_forward_27558633">美食纪录片《知味兴安盟》热播，网友直呼“看饿了”！</a></div>
+          <div class="swiper-slide green"><a href="https://www.thepaper.cn/newsDetail_forward_27537281">鱼鲜之美尽收舌底 |《知味兴安盟》第二集里有你爱吃的~</a></div>
+          <div class="swiper-slide"><a href="https://www.thepaper.cn/newsDetail_forward_24950079">秋渐深，到内蒙古赏美景吃美食！</a></div>
+          <div class="swiper-slide green"><a href="https://www.thepaper.cn/newsDetail_forward_25014065">如何让“蒙”字号美食走出新路子？</a></div>
+          <div class="swiper-slide"><a href="http://world.people.com.cn/n1/2018/0907/c1002-30277872.html">“感知中国”——中国内蒙古味道小吃美食节走进乌兰巴托</a></div>
+          <div class="swiper-slide green"><a href="https://www.chinanews.com.cn/m/sh/2018/08-08/8593648.shtml">首届“内蒙古味道”草原美食文化节开幕 民众享盛宴</a></div>
+          <div class="swiper-slide"><a href="https://www.nmg.gov.cn/asnmg/nmgwd/ms/202203/t20220323_2021514.html">内蒙古味道|地标美食巡展地域篇——乌兰察布经典10味</a></div>
+          <div class="swiper-slide green"><a href="http://nm.people.com.cn/n2/2020/1007/c196689-34335789.html">“敕勒川味道”美食名录45味“亮相”</a></div>
+          <div class="swiper-slide"><a href="https://www.nmg.gov.cn/asnmg/yxnmg/tcms/tc/202010/t20201027_234782.html">寻味 | 科尔沁美味</a></div>
+        </div>
+      </div>
+      <div class="Video-footer"></div>
+    </div>
+    </div>
+  </section>
+  <script src="js/flexible.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
+  <script src="./js/highmaps2.js"></script>
+  <script src="https://data.jianshukeji.com/geochina/neimenggu.js"></script>
+  <script src="./js/food.js"></script>
+</body>
+
+</html>

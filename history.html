@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>草原之眼</title>
+  <link rel="stylesheet" href="css/history.css" />
+  <script src="./js/echarts.min.js"></script>
+  <link rel="icon" href="./images/_20240602144134.jpg">
+</head>
+
+<body>
+   
+  <header>
+    <a href="index.html">
+      <div class="back">
+      <img src="./images/返回.png" alt="" title="首页">
+    </div>
+
+    </a>
+    
+    <h1>历史文化</h1>
+      <p class="meng">түүхэн сүлжээ</p>
+    
+
+    <div class="showTime">当前时间：2020年3月17-0时54分14秒</div>
+    <script>
+      var t = null;
+      t = setTimeout(time, 1000); //開始运行
+      function time() {
+        clearTimeout(t); //清除定时器
+        dt = new Date();
+        var y = dt.getFullYear();
+        var mt = dt.getMonth() + 1;
+        var day = dt.getDate();
+        var h = dt.getHours(); //获取时
+        var m = dt.getMinutes(); //获取分
+        var s = dt.getSeconds(); //获取秒
+        document.querySelector(".showTime").innerHTML =
+          "当前时间：" +
+          y +
+          "年" +
+          mt +
+          "月" +
+          day +
+          "-" +
+          h +
+          "时" +
+          m +
+          "分" +
+          s +
+          "秒";
+        t = setTimeout(time, 1000); //设定定时器，循环运行
+      }
+    </script>
+  </header>
+           
+  <section class="mainbox">
+    <div class="column">
+      <div class="panel bar">
+        <h2>非遗历史</h2>
+        <div class="chartt">
+          <div class="text" id="marqueebox0">
+            <span class="">2007.<a
+                href="https://baike.baidu.com/item/%E5%86%85%E8%92%99%E5%8F%A4%E5%8C%BA%E7%BA%A7%E9%9D%9E%E7%89%A9%E8%B4%A8%E6%96%87%E5%8C%96%E9%81%97%E4%BA%A7%E5%90%8D%E5%BD%95/9847840?fromModule=search-result_lemma-recommend"
+                style="color: rgb(240, 250, 255);">
+                内蒙古自治区人民政府公布第一批自治区级非物质文化遗产名录（共计140项）
+              </a></span>
+            <span class="feiyi">2009.<a href="https://baike.baidu.com/item/%E5%86%85%E8%92%99%E5%8F%A4%E5%8C%BA%E7%BA%A7%E9%9D%9E%E7%89%A9%E8%B4%A8%E6%96%87%E5%8C%96%E9%81%97%E4%BA%A7%E5%90%8D%E5%BD%95/9847840?fromModule=search-result_lemma-recommend" 
+              style="color: rgba(255, 250, 240, 0.326);">
+                内蒙古自治区人民政府公布第二批自治区级非物质文化遗产名录（共计111项）
+              </a></span>
+            <span class="feiyi">2011.<a href="https://baike.baidu.com/item/%E5%86%85%E8%92%99%E5%8F%A4%E5%8C%BA%E7%BA%A7%E9%9D%9E%E7%89%A9%E8%B4%A8%E6%96%87%E5%8C%96%E9%81%97%E4%BA%A7%E5%90%8D%E5%BD%95/9847840?fromModule=search-result_lemma-recommend" 
+              style="color: rgb(28, 22, 223);">
+                内蒙古自治区人民政府公布第三批自治区级非物质文化遗产名录（共计48项）和自治区级非物质文化遗产扩展名录（共计48项）
+              </a></span>
+            <span class="feiyi">2013.<a href="https://baike.baidu.com/item/%E5%86%85%E8%92%99%E5%8F%A4%E5%8C%BA%E7%BA%A7%E9%9D%9E%E7%89%A9%E8%B4%A8%E6%96%87%E5%8C%96%E9%81%97%E4%BA%A7%E5%90%8D%E5%BD%95/9847840?fromModule=search-result_lemma-recommend" 
+              style="color: rgba(10, 121, 91, 0.938);">
+                内蒙古自治区人民政府公布第四批自治区级非物质文化遗产名录和自治区级非物质文化遗产扩展名录。
+              </a></span>
+            <span class="feiyi">2015.<a href="https://baike.baidu.com/item/%E5%86%85%E8%92%99%E5%8F%A4%E5%8C%BA%E7%BA%A7%E9%9D%9E%E7%89%A9%E8%B4%A8%E6%96%87%E5%8C%96%E9%81%97%E4%BA%A7%E5%90%8D%E5%BD%95/9847840?fromModule=search-result_lemma-recommend" 
+              style="color: rgba(175, 235, 8, 0.966);">
+                内蒙古自治区人民政府公布第五批自治区级非物质文化遗产代表性项目（共计57项）和自治区级非物质文化遗产代表性项目名录扩展项目（共计29项）
+              </a></span>
+            <span class="feiyi">2018.<a href="https://baike.baidu.com/item/%E5%86%85%E8%92%99%E5%8F%A4%E5%8C%BA%E7%BA%A7%E9%9D%9E%E7%89%A9%E8%B4%A8%E6%96%87%E5%8C%96%E9%81%97%E4%BA%A7%E5%90%8D%E5%BD%95/9847840?fromModule=search-result_lemma-recommend" 
+              style="color: rgb(8, 0, 247);">
+                内蒙古自治区人民政府公布第六批自治区级非物质文化遗产名录（共计88项）和自治区级非物质文化遗产扩展名录（共计50项）
+              </a></span>
+            <span class="feiyi">2022.<a href="https://baike.baidu.com/item/%E5%86%85%E8%92%99%E5%8F%A4%E5%8C%BA%E7%BA%A7%E9%9D%9E%E7%89%A9%E8%B4%A8%E6%96%87%E5%8C%96%E9%81%97%E4%BA%A7%E5%90%8D%E5%BD%95/9847840?fromModule=search-result_lemma-recommend" 
+              style="color: rgb(217, 19, 19);">
+                内蒙古自治区人民政府公布第七批自治区级非物质文化遗产代表性项目（共58项）和自治区级非物质文化遗产代表性项目名录扩展项目（共28项）
+              </a></span>
+            <script src="./js/text.js"></script>
+          </div>
+          <!-- ------------------------------------- -->
+
+        </div>
+
+        <div class="panel-footer"></div>
+      </div>
+     
+      <div class="panel pie">
+        <h2>第五批国家级非遗传承人年龄分布</h2>
+        <div class="chartrs">
+        
+        </div>
+        
+        <div class="panel-footer"></div>
+      </div>
+      
+    </div>
+    <div class="column">
+      <div class="no">
+        <div class="no-hd">
+          <ul>
+            <li>5000</li>
+            <li>21000</li>
+          </ul>
+        </div>
+        <div class="no-bd">
+          <ul>
+            <li>历史文化</li>
+            <li>内蒙遗迹</li>
+          </ul>
+        </div>
+      </div>
+      <div id="map">
+        
+          <!-- <video class="content" autoplay muted playsinline loop >
+           <source  src="https://v3-weba.douyinvod.com/ecb6d89b3624198ca2b18316f86649e0/6659b945/video/tos/cn/tos-cn-ve-15c001-alinc2/oQNfIahza5NBtBdQ8IeFBZyEiBfog7AicKCCpA/?a=6383&ch=11&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C3&cv=1&br=172&bt=172&cs=2&ds=6&ft=GTeMyqDMffPd1B~2Y1VNvAq-antLjrKwhmQ.RkaCm~afejVhWL6&mime_type=video_mp4&qs=11&rc=NjpnO2g6Mzs3O2U4ODY6ZUBpM3NscjQ6Zjh4azMzNGkzM0AyMWBgYDMzXjMxXjM2Y182YSNtbjBwcjQwcy9gLS1kLWFzcw%3D%3D&btag=c0000e00028000&cquery=100o_101n_100B_100x_100z&dy_q=1717152498&feature_id=768c4eee0a62d19cc9ffc7d17c46e537&l=202405311848189EF10384386CF33BD26B">
+          </video> -->
+          <div class="panel-footer">
+
+          </div>
+       
+      </div>
+    </div>
+    <div class="column">
+      <div class="panel ">
+        <h2>历史遗迹/建筑</h2>
+        <div class="chart1">
+          <!--图片轮播 -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/lishi.jpg" alt="">
+
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/lishi2.jpg" alt="">
+
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/lishi3.jpg" alt="">
+
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/lishi4.jpg" alt="">
+
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/lishi5.jpg" alt="">
+
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/lishi6.jpg" alt="">
+
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/lishi7.jpg" alt="">
+
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/lishi8.jpg" alt="">
+
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/lishi9.jpg" alt="">
+
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/lishi10.jpg" alt="">
+
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/lishi11.jpg" alt="">
+
+              </div>
+
+            </div>
+          </div>
+          <script src="./js/swiper-bundle.min.js"></script>
+          <script src="./js/swiper.js"></script>
+        </div>
+                 
+        <div class="panel-footer"></div>
+      </div>
+
+      <div class="panel bar">
+        <h2>历史</h2>
+        
+      <!-- <br /> -->
+      <div class="box" id="marqueebox1">
+          <ul>
+              <li style=" background: rgba(49, 234, 247, 0.406);">
+                <a href="https://baike.baidu.com/item/%E5%86%85%E8%92%99%E5%8F%A4%E5%8E%86%E5%8F%B2/6883142#%E6%94%BF%E6%9D%83%E7%9A%84%E6%9B%B4%E6%9B%BF">
+                  10世纪:契丹逐渐崛起，南下进攻后晋和北宋，并建立了辽国</a></li>
+              <li style="background: rgba(227, 30, 184, 0.244);">
+                <a href="https://baike.baidu.com/item/%E5%86%85%E8%92%99%E5%8F%A4%E5%8E%86%E5%8F%B2/6883142#%E6%94%BF%E6%9D%83%E7%9A%84%E6%9B%B4%E6%9B%BF">
+                  13世纪初:成吉思汗征服统一了蒙古草原各个部落........</a></li>
+              <li style="background: rgba(21, 243, 69, 0.479);">
+                <a href="https://baike.baidu.com/item/%E5%86%85%E8%92%99%E5%8F%A4%E5%8E%86%E5%8F%B2/6883142#%E6%94%BF%E6%9D%83%E7%9A%84%E6%9B%B4%E6%9B%BF">
+                  1368年:朱元璋领导农民起义灭元建明，蒙古部族退守回内蒙古高原。</a></li>
+              <li style="background: rgba(7, 236, 34, 0.126);">
+                <a href="https://baike.baidu.com/item/%E5%86%85%E8%92%99%E5%8F%A4%E5%8E%86%E5%8F%B2/6883142#%E6%94%BF%E6%9D%83%E7%9A%84%E6%9B%B4%E6%9B%BF">
+                  公元1644年:蒙古族地区建立了盟旗制度，把漠南称为内蒙古，.....</a></li>
+                  <li style="background: rgba(179, 175, 221, 0.511);">
+                    <a href="https://www.dswxyjy.org.cn/n1/2022/0721/c427919-32482399.html">
+                      1921年7月—1927年7月:共产党组织在内蒙古地区的创建和大革命的开展</a></li>
+                  <li style="background: rgba(177, 225, 209, 0.276);">
+                    <a href="https://www.dswxyjy.org.cn/n1/2022/0721/c427919-32482399.html">
+                      1927年8月—1937年7月:土地革命战争时期党领导......................</a></li>
+                  <li style="background: rgba(40, 220, 52, 0.128);">
+                    <a href="https://www.dswxyjy.org.cn/n1/2022/0721/c427919-32482399.html">
+                      1937年7月—1945年8月:党领导的内蒙古地区抗日战争</a></li>
+                  <li style="background: rgba(213, 133, 216, 0.651);">
+                    <a href="https://www.dswxyjy.org.cn/n1/2022/0721/c427919-32482399.html">
+                      1945年8月—1949年9月:党领导实现内蒙古民族区域自治和........</a></li>
+            </ul>
+      </div>
+        <div class="panel-footer"></div>:
+
+      </div>
+    </div>
+  </section>
+  <script src="./js/highmaps.js"></script>
+  <script src="https://data.jianshukeji.com/geochina/neimenggu.js"></script>
+  <script src="./js/history.js"></script>
+  <script src="./js/flexible.js"></script>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/china.js"></script>
+ <script src="./font/DS-DIGIT.TTF"></script>
+  <script src="./js/textTwo.js"></script>
+
+</body>
+
+</html>
